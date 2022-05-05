@@ -91,7 +91,7 @@ class Tetris(object):
                     self.active_block.move(-constants.BWIDTH,0)
                 if ev.key == pygame.K_RIGHT:
                     self.active_block.move(constants.BWIDTH,0)
-                if ev.key == pygame.K_l
+                if ev.key == pygame.K_l:
                     self.active_block.rotate()
                 if ev.key == pygame.K_p:
                     self.pause()
@@ -328,7 +328,7 @@ class Tetris(object):
         """
         # Clean the screen, draw the board and draw
         # all tetris blocks
-        self.screen.fill(constants.YEIIOW)
+        self.screen.fill(constants.GREEN)
         self.draw_board()
         for blk in self.blk_list:
             blk.draw()
